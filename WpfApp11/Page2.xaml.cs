@@ -22,10 +22,11 @@ namespace WpfApp11
     /// </summary>
     public partial class Page2 : Page
     {
+    Dat dat1;
         public Page2(Dat dat)
         {
             InitializeComponent();
-            Dat dat1;
+            dat1 = dat;
 
         }
 
@@ -46,7 +47,6 @@ namespace WpfApp11
                 default: y = Sqrt(Abs(Pow(a + b, 2) + c)); break;
             }
             Otv.Text = $"{y}";
-            Dat dat1 = new Dat();
             double v = dat1.X + y;
             symm.Text = $"{v}";
         }
