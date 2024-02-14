@@ -20,7 +20,7 @@ namespace WpfApp11
     /// </summary>
     public partial class Page1 : Page
     {
-    Dat fat = new Dat();
+    Dat dat = new Dat();
         public Page1()
         {
             InitializeComponent();
