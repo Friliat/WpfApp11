@@ -20,6 +20,7 @@ namespace WpfApp11
     /// </summary>
     public partial class Page1 : Page
     {
+    Dat fat = new Dat();
         public Page1()
         {
             InitializeComponent();
@@ -27,7 +28,7 @@ namespace WpfApp11
 
          public class Dat
         {
-            public double X{get;set;}
+            public double X;
             public void GetInfo()
             {
                 if (X > 0)
@@ -55,7 +56,7 @@ namespace WpfApp11
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Dat dat = new Dat();
+        
             dat.X = double.Parse(A.Text);
             dat.GetInfo();
             NavigationService.Navigate(new Page2(dat));
