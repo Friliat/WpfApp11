@@ -27,7 +27,7 @@ namespace WpfApp11
 
          public class Dat
         {
-            public double X{get;set;} ;
+            public double X{get;set;}
             public void GetInfo()
             {
                 if (X > 0)
